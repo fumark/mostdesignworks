@@ -1,9 +1,0 @@
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www.mostdesignworks.jp
-RewriteRule ^(.*)$ http://mostdesignworks.jp/$1 [R=301,L]
-
-Action myphp-cgi /php.cgi
-#AddHandler myphp-cgi .html
-<Files ~ "^index\.html?$">
-  AddHandler myphp-cgi .html .htm
-</Files>
